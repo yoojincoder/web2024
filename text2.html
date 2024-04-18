@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action=""/action_page.php">
+            <fieldset>
+                <legend><h3>HTML Forms</h3></legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" name="fname" id="fname" value="John" disabled ><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" name="lname" id="lname" value="Doe" readonly><br><br>
+                <label for="email">Enter your email:</label>
+                <input type="email" name="email" id="email"><br>
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd"><br>
+                <input type="hidden" name="custId" id="custId" value="3487">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+
+
+        <h3>라디오 버튼 예제</h3>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" name="fav_language" id="CSS" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" name="fav_language" id="javascript" value="Javascript">
+        <label for="javascript">Javascript</label><br><br>
+
+
+
+        <h3>date time 입력 예제</h3>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+
+        <h3>다양한 입력타입 예제</h3>
+        <input type="button" onclick="alert('Hello World!')" value="Click me!"><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" name="favcolor" id="favcolor"><br>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" name="vol" id="vol" min="0" max="50"><br><br>
+
+
+
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist><br><br>
+
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+        </form>
+
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+        <textarea name="message" cols="30" rows="10">The cat was playing in the garden.</textarea>
+    </body>
+</html>

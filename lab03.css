@@ -1,0 +1,133 @@
+body {
+    margin: 0 100px 0 100px;
+}
+
+#top_header {
+    background-color: rgb(150, 162, 231);
+    color: white;
+    padding: 20px 0 0 40px;
+    h1 {
+        font-size: 40px;
+    }
+}
+
+#login {
+    background-color: rgb(150, 162, 231);
+    float: left;
+    color: white;
+    padding: 15px;
+    height:915px;
+}
+
+#navi {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+  
+header nav ul li a {
+    display: block;
+    padding: 15px 40px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+header nav ul li:hover > ul {
+    display: block;
+}
+
+header nav ul li:hover > a {
+    background-color: white;
+    color: rgb(150, 162, 231);
+}
+  
+header nav ul ul {
+display: none;
+position: absolute;
+text-align: center;
+color: white;
+font-size: small;
+padding-left: 0;
+background-color: rgb(150, 162, 231);
+border: 1px solid black;
+}
+
+#ad article{
+    float: right;
+    border: 3px solid rgb(150, 162, 231);
+    padding: 10px;
+    display:block;
+    clear: right;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fffde9;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 3px solid black;
+    padding: 10px;
+    display:block;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    img {
+        width: 250px;
+        height: auto;
+    }
+    h3 {
+        font-size: 25px;
+        font-weight: bolder ;
+        padding: 0 0 0 10px;
+    }
+
+    figure {
+        margin-right: 20px; 
+    }
+
+    #content {
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+
+#login, #post {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgb(150, 162, 231);
+    height: 55px;
+    text-align: center;
+    padding: 3px;
+    margin: 6px 0 0 0;
+
+    ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 110px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
