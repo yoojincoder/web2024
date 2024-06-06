@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공연/전시 티켓 예매 웹페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        .content-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .item-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>공연/전시 티켓 예매 웹페이지</h1>
+    </header>
+    <nav>
+        <a href="#">뮤지컬</a>
+        <a href="#">콘서트</a>
+        <a href="#">전시/행사</a>
+        <a href="#">관람후기</a>
+        <a href="#">마이페이지</a>
+        <a href="#">로그인</a>
+        <a href="#">회원가입</a>
+    </nav>
+    <div class="container">
+        <!-- 뮤지컬 섹션 -->
+        <div class="content-section" id="musical">
+            <h2>뮤지컬</h2>
+            <div class="item-list">
+                <div class="item">
+                    <h3>뮤지컬 제목 1</h3>
+                    <p>설명 1</p>
+                </div>
+                <div class="item">
+                    <h3>뮤지컬 제목 2</h3>
+                    <p>설명 2</p>
+                </div>
+                <!-- 더 많은 항목을 추가할 수 있습니다 -->
+            </div>
+        </div>
+        <!-- 콘서트 섹션 -->
+        <div class="content-section" id="concert">
+            <h2>콘서트</h2>
+            <div class="item-list">
+                <div class="item">
+                    <h3>콘서트 제목 1</h3>
+                    <p>설명 1</p>
+                </div>
+                <div class="item">
+                    <h3>콘서트 제목 2</h3>
+                    <p>설명 2</p>
+                </div>
+                <!-- 더 많은 항목을 추가할 수 있습니다 -->
+            </div>
+        </div>
+        <!-- 전시/행사 섹션 -->
+        <div class="content-section" id="exhibition">
+            <h2>전시/행사</h2>
+            <div class="item-list">
+                <div class="item">
+                    <h3>전시/행사 제목 1</h3>
+                    <p>설명 1</p>
+                </div>
+                <div class="item">
+                    <h3>전시/행사 제목 2</h3>
+                    <p>설명 2</p>
+                </div>
+                <!-- 더 많은 항목을 추가할 수 있습니다 -->
+            </div>
+        </div>
+        <!-- 관람후기 섹션 -->
+        <div class="content-section" id="reviews">
+            <h2>관람후기</h2>
+            <div class="item-list">
+                <div class="item">
+                    <h3>후기 제목 1</h3>
+                    <p>후기 내용 1</p>
+                </div>
+                <div class="item">
+                    <h3>후기 제목 2</h3>
+                    <p>후기 내용 2</p>
+                </div>
+                <!-- 더 많은 항목을 추가할 수 있습니다 -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 공연/전시 티켓 예매 웹페이지</p>
+    </footer>
+</body>
+</html>
