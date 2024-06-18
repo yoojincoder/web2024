@@ -91,22 +91,28 @@
 
 <body>
   <header>
-    <h1>TICKET</h1>
+    <div class="top">
+    <h1><a href="main.html">TICKET</a></h1>
+    <div class="login-signup">
+      <a href="login.html">로그인</a>
+      <a href="login.html">회원가입</a>
+      <a id="logout-btn">로그아웃</a>
+    </div>
+    </div>
     <nav>
       <ul>
         <div id="menu1">
-          <li><a href="#">뮤지컬</a></li>
-          <li><a href="#">콘서트</a></li>
-          <li><a href="">전시/행사</a></li>
+          <li><a href="musical.html">뮤지컬</a></li>
+          <li><a href="concert.html">콘서트</a></li>
+          <li><a href="event.html">전시/행사</a></li>
           <li><a href="#">랭킹</a></li>
         </div>
         <div id="menu2">
-          <li><a href="">관람후기</a></li>
-          <li><a href="#">마이페이지</a></li>
+          <li><a href="view_review.html">관람후기</a></li>
+          <li><a href="mypage.html">마이페이지</a></li>
         </div>
       </ul>
     </nav>
-
   </header>
 
   <main>
@@ -118,33 +124,18 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img src="메인 커버(헤드윅).webp" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
               <div class="container">
-                <div class="carousel-caption text-start">
-                  <h1>Example headline.</h1>
-                  <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img src="메인 커버(베르나르).webp" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
               <div class="container">
-                <div class="carousel-caption">
-                  <h1>Another example headline.</h1>
-                  <p>Some representative placeholder content for the second slide of the carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                </div>
               </div>
             </div>
             <div class="carousel-item">
-              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+              <img src="메인 커버(싸이 흠뻑쇼).webp" class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
               <div class="container">
-                <div class="carousel-caption text-end">
-                  <h1>One more for good measure.</h1>
-                  <p>Some representative placeholder content for the third slide of this carousel.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                </div>
               </div>
             </div>
           </div>
@@ -158,115 +149,143 @@
           </button>
       </div>
 
+      <h3 id="title">뮤지컬</h3>
       <div id="body">
         <div class="poster-container">
-          <div class="poster">
-          <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-              <h2>뮤지컬 소개</h2>
-              <p>이 뮤지컬은 ...</p>
-              <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-          <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-              <h2>뮤지컬 소개</h2>
-              <p>이 뮤지컬은 ...</p>
-              <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
+          <div class="poster"><a href="buy.html" target="_blank">
+          <img src="뮤지컬(영웅).gif" alt="뮤지컬 포스터">
+            <h6>뮤지컬 &lt;영웅&gt;</h6>
+            <p>세종문화회관 대극장</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+          <img src="뮤지컬(디어 에반 핸슨).gif" alt="뮤지컬 포스터">
+            <h6>뮤지컬 &lt;디어 에반 핸슨&gt;</h6>
+            <p>충무아트센터 대극장</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="뮤지컬(시카고).gif" alt="뮤지컬 포스터">
+              <h6>뮤지컬 &lt;시카고&gt;</h6>
+              <p>디큐브 링크아트센터</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="뮤지컬(빨래).gif" alt="뮤지컬 포스터">
+              <h6>뮤지컬 &lt;빨래&gt;</h6>
+              <p>인터파크 유니플렉스 2관</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="뮤지컬(유진과 유진).gif" alt="뮤지컬 포스터">
+              <h6>뮤지컬 &lt;유진과 유진&gt;</h6>
+              <p>링크아트센터드림 드림4관</p>
+          </a></div>
         </div>
-        <button class="all">뮤지컬 전체보기</button>
+      </div>
+      <div class="button">
+        <button class="show_all"><a href="musical.html">뮤지컬 전체보기</a></button>
       </div><br><br><br>
 
+      <h3 id="title">콘서트</h3>
       <div id="body">
         <div class="poster-container">
-          <div class="poster">
-          <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-              <h2>뮤지컬 소개</h2>
-              <p>이 뮤지컬은 ...</p>
-              <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-          <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-              <h2>뮤지컬 소개</h2>
-              <p>이 뮤지컬은 ...</p>
-              <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
+          <div class="poster"><a href="buy.html" target="_blank">
+          <img src="콘서트 둘러보기1.gif" alt="뮤지컬 포스터">
+            <h6>싸이 흠뻑쇼</h6>
+            <p>서울대공원</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+          <img src="콘서트 둘러보기2.gif" alt="뮤지컬 포스터">
+            <h6>두아 리파 내한공연</h6>
+            <p>고척스카이돔</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="콘서트 둘러보기3.gif" alt="뮤지컬 포스터">
+              <h6>The Dream Reborn Tour</h6>
+              <p>올림픽공원</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="콘서트 둘러보기4.gif" alt="뮤지컬 포스터">
+              <h6>10cm 팬미팅</h6>
+              <p>올림픽공원</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="콘서트 둘러보기5.gif" alt="뮤지컬 포스터">
+              <h6>2024 어반자카파 팬 콘서트</h6>
+              <p>블루스퀘어</p>
+          </a></div>
         </div>
-        <button class="all">콘서트 전체보기</button>
+      </div>
+      <div class="button">
+        <button class="show_all"><a href="concert.html">콘서트 전체보기</a></button>
       </div><br><br><br>
 
+      <h3 id="title">전시/행사</h3>
       <div id="body">
         <div class="poster-container">
-          <div class="poster">
-          <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-              <h2>뮤지컬 소개</h2>
-              <p>이 뮤지컬은 ...</p>
-              <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-          <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-              <h2>뮤지컬 소개</h2>
-              <p>이 뮤지컬은 ...</p>
-              <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
-          <div class="poster">
-            <img src="P0003831_p.gif" alt="뮤지컬 포스터">
-                <h2>뮤지컬 소개</h2>
-                <p>이 뮤지컬은 ...</p>
-                <p>더 많은 정보 ...</p>
-          </div>
+          <div class="poster"><a href="buy.html" target="_blank">
+          <img src="전시행사 추천1.webp" alt="뮤지컬 포스터">
+            <h6>이토 쥰지 호러하우스</h6>
+            <p>DUEX</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+          <img src="전시행사 추천2.webp" alt="뮤지컬 포스터">
+              <h6>원피스 대해적 시대</h6>
+              <p>대원뮤지엄</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="전시행사 추천3.webp" alt="뮤지컬 포스터">
+              <h6>에드바르 뭉크</h6>
+              <p>예술의 전당</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="전시행사 추천4.webp" alt="뮤지컬 포스터">
+              <h6>헬로키티 50주년 특별전</h6>
+              <p>동대문디자인플라자</p>
+          </a></div>
+          <div class="poster"><a href="buy.html" target="_blank">
+            <img src="전시행사 추천5.webp" alt="뮤지컬 포스터">
+              <h6>베르나르 뷔페</h6>
+              <p>예술의 전당</p>
+          </a></div>
         </div>
-
-        <button class="all">전시/행사 전체보기</button>
+      </div>
+      <div class="button">
+        <button class="show_all"><a href="event.html">전시/행사 전체보기</a></button>
       </div>
   </main>
+
+  <div class="re">
+    <h3>베스트 관람후기</h3>
+    <div class="review">
+      <div class="review-block">
+        <div class="review-info">
+          <p id="name">뮤지컬 &lt;영웅&gt;</p>
+          <h6>너무 재밌었다!</h6>
+          <p>정말 감동적이었습니다. 주인공의 열연이 인상 깊었어요. 그의 고난과 역경을 겪는 모습에서 삶의 진정한 의미를 느낄 수 있었습니다. 특히 안중근 의사가 나라를 위해 희생하려는 감동적인 장면은 오랫동안 제 마음에 남아있습니다. 이 작품을 통해 일제강점기의 아픔을 깨달을 수 있었습니다.</p>
+        </div>
+        <div class="review-img">
+          <img src="뮤지컬(영웅).gif" alt="">
+        </div>
+      </div>
+    <div class="review-block">
+      <div class="review-info">
+        <p id="name">뮤지컬 &lt;디어 에반 핸슨&gt;</p>
+        <h6>감동적이었습니다.</h6>
+        <p>무엇보다도 뮤지컬의 음악이 가장 인상 깊었습니다. 주제가와 삽입곡들이 서사와 잘 어우러져 극의 감동을 배가시켰습니다. 관객들은 노래에 맞춰 박수를 치며 열광하는 모습이었습니다.
+          공연이 끝나고 나서도 여운이 남았습니다. 주인공의 감동적인 여정과 열정적인 무대 매력에 푹 빠져 있었습니다. 이번 뮤지컬 관람은 단순한 공연 관람을 넘어 예술적 감동을 느낄 수 있었던 의미 있는 시간이었습니다.</p>
+      </div>
+      <div class="review-img">
+        <img src="뮤지컬(디어 에반 핸슨).gif" alt="">
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="button">
+    <button class="show_all"><a href="view_review.html">관람후기 전체보기</a></button>
+  </div>
+  
+  <br>
+  <hr>
+  <div id="msg">이곳에 위치 정보 출력</div>
+  <iframe id="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe><br/>
 
   <footer>
     <nav id="foot">
@@ -280,5 +299,61 @@
       </ul>
     </nav>	
   </footer>
+
+  <script src="login.js"></script>
+  <script>
+    if(navigator.geolocation) 
+        navigator.geolocation.getCurrentPosition(success); 
+    else
+        alert("지원하지 않음");
+        
+    function success(position) {
+        let lat = position.coords.latitude; 
+        let lon = position.coords.longitude; 
+        let acc = position.coords.accuracy; 
+        lat = lat.toPrecision(6); lon = lon.toPrecision(6);
+        let now = new Date();
+        let text = "현재 시간 " + now.toUTCString() + "<br>";
+        text += "사용자 현재 위치 (위도 " + lat + "°, 경도 " + lon + "°)<br>";
+        text += "정확도 " + acc + "m<br>";
+        document.getElementById("msg").innerHTML = text;
+
+        let map = document.getElementById("map");
+        map.src ="https://www.openstreetmap.org/export/embed.html?bbox=" + (parseFloat(lon)-0.01) + "%2C" + (parseFloat(lat)-0.01) + "%2C" + (parseFloat(lon)+0.01) + "%2C" + (parseFloat(lat) + 0.01);
+    }
+    function changed(position) {
+        let lat = position.coords.latitude; 
+        let lon = position.coords.longitude; 
+        alert("(" + lat + ", " + lon + ") 위치로 변경됨");
+    }
+
+    navigator.geolocation.clearWatch(watchID); 
+
+    let options = { 
+        enableHighAccuracy: false,
+        timeout: 5000,
+        maximumAge: 0 };
+    let count=0; 
+    let watchID; 
+    if(navigator.geolocation) {
+        watchID = navigator.geolocation.watchPosition(changed, null, options);
+    }
+    else { alert("지원하지 않음"); }
+    function changed(position) {
+        if(count == 5) { 
+            navigator.geolocation.clearWatch(watchID); 
+            document.getElementById("msg").innerHTML = "위치 서비스 종료";
+            return;
+        }
+        let lat = position.coords.latitude; 
+        let lon = position.coords.longitude 
+        let text = count + ": (위도 " + lat + "°, 경도 " + lon + "°)로 변경됨<br>";
+        document.getElementById("msg").innerHTML = text; 
+        let map = document.getElementById("map");
+        map.src ="https://www.openstreetmap.org/export/embed.html?bbox=" + (parseFloat(lon)-0.01) + "%2C"
+    + (parseFloat(lat)-0.01) + "%2C" + (parseFloat(lon)+0.01) + "%2C" + (parseFloat(lat) + 0.01);
+        count++; 
+    }
+  </script>
 </body>
 </html>

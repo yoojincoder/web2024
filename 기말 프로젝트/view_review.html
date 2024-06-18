@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>리뷰</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="view_review.css" rel="stylesheet">
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    header {
+        background-color: #333;
+        font-size: small;
+        color: white;
+        padding: 2rem 7rem 0 7rem;
+        .top {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+        }
+        .login-signup {
+          display: flex;
+          justify-content: flex-end;
+          a {
+            color: white;
+            text-decoration: none;
+            margin-left: 40px;
+          }
+        }
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0 0 30px 0;
+        }
+        h1 a {
+          text-decoration: none;
+          color: white;
+        }
+        nav ul {
+          display: flex;
+        }
+        nav ul li {
+          padding: 0 50px 0 50px;
+        }
+
+        nav ul li a {
+          display: block;
+          /* padding: 15px 40px; */
+          /* font-weight: bold; */
+          width: 100px;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          font-size: 20px;
+        }
+        nav a:hover {
+          background-color: #555;
+        }
+        #menu1 {
+          list-style: none;
+          display: flex;
+          /* justify-content: flex-end; */
+        }
+        #menu2 {
+          list-style: none;
+          display: flex;
+          /* justify-content: right; */
+        }
+    }
+
+    footer {
+        background-color: #333;
+        /* padding: 0.5rem 0; */
+
+        nav ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        }
+        nav ul li {
+          list-style: none;
+          font-size: smaller;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          padding: 15px 50px 0 50px;
+        }
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+        <h1><a href="main.html">TICKET</a></h1>
+        <div class="login-signup">
+            <a href="login.html">로그인</a>
+            <a href="login.html">회원가입</a>
+            <a id="logout-btn">로그아웃</a>
+        </div>
+        </div>
+        <nav>
+            <ul>
+            <div id="menu1">
+                <li><a href="musical.html">뮤지컬</a></li>
+                <li><a href="concert.html">콘서트</a></li>
+                <li><a href="event.html">전시/행사</a></li>
+                <li><a href="#">랭킹</a></li>
+            </div>
+            <div id="menu2">
+                <li><a href="view_review.html">관람후기</a></li>
+                <li><a href="mypage.html">마이페이지</a></li>
+            </div>
+            </ul>
+        </nav>
+
+    </header>
+  <div class="container">
+    <div class="payment-form">
+      <div class="time-period">
+        <button class="active">오늘</button>
+        <button>주간</button>
+        <button>월간</button>
+      </div>
+      <h2>가장 많이 읽은 관람후기</h2>
+      <table>
+        <tbody>
+          <tr class="grey">
+            <td>영웅</td>
+            <td>정성화팬</td>
+          </tr>
+          <tr>
+            <td colspan="2">정말 감동적이었습니다. 주인공의 열연이 인상 깊었어요. 그의 고난과 역경을 겪는 모습에서 삶의 진정한 의미를 느낄 수 있었습니다. 특히 안중근 의사가 나라를 위해 희생하려는 감동적인 장면은 오랫동안 제 마음에 남아있습니다. 이 작품을 통해 일제강점기의 아픔을 깨달을 수 있었습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr class="grey">
+            <td>헬로키티 50주년 특별전</td>
+            <td>안녕안녕</td>
+          </tr>
+          <tr>
+            <td colspan="2">저는 최근 이 전시회를 관람했는데, 정말 인상 깊었습니다. 전시장에 들어서자마자 눈에 띄는 대형 조각품이 먼저 시선을 끌었습니다. 작품의 규모와 세부 디테일에 놀라움을 금치 못했고, 작가의 의도와 메시지를 느낄 수 있었습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr class="grey">
+            <td>2024 어반자카파 팬 콘서트</td>
+            <td>알러뷰</td>
+          </tr>
+          <tr>
+            <td colspan="2">아티스트의 노래 실력은 정말 대단했습니다. 생동감 넘치는 가창력과 풍부한 감정 표현이 돋보였고, 관객들을 사로잡는 매력이 느껴졌습니다. 특히 저가 가장 좋아하는 노래를 부를 때는 소름이 돋을 정도로 감동적이었습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr class="grey">
+            <td>리얼 뱅크시</td>
+            <td>문화인</td>
+          </tr>
+          <tr>
+            <td colspan="2">전시장 곳곳에 배치된 영상 작품들도 흥미로웠습니다. 작품 속 인물들의 모습과 행동이 현실감 있게 표현되어 있어 몰입도가 높았습니다. 작품이 전달하는 메시지에 대해 깊이 생각해볼 수 있는 기회가 되었습니다.
+
+              전반적으로 이번 전시회는 매우 만족스러웠습니다. 작품 하나하나에 깊은 의미와 감동이 담겨 있었고, 전시장 전체의 구성과 연출도 훌륭했습니다. 이번 관람을 통해 새로운 예술 세계를 발견할 수 있었던 것 같아 기쁩니다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr class="grey">
+            <td>디어 에반 핸슨</td>
+            <td>씬씨얼리미</td>
+          </tr>
+          <tr>
+            <td colspan="2">무엇보다도 뮤지컬의 음악이 가장 인상 깊었습니다. 주제가와 삽입곡들이 서사와 잘 어우러져 극의 감동을 배가시켰습니다. 관객들은 노래에 맞춰 박수를 치며 열광하는 모습이었습니다.
+              공연이 끝나고 나서도 여운이 남았습니다. 주인공의 감동적인 여정과 열정적인 무대 매력에 푹 빠져 있었습니다. 이번 뮤지컬 관람은 단순한 공연 관람을 넘어 예술적 감동을 느낄 수 있었던 의미 있는 시간이었습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="payment-info">
+        <h5>공연관람후기 4,990,343개</h5>
+        <h6>오늘 등록된 관람후기 8개</h6>
+        <a href="write_review.html" class="payment-button" target="_blank">관람후기 작성</a>
+      </div>
+  </div>
+  <button class="show_all">전체보기</button>
+  
+  <footer>
+    <nav id="foot">
+      <ul>
+        <li><a href="#">회사 소개</a>
+        <li><a href="#">이용약관</a>
+        <li><a href="#">개인정보처리방침</a>
+        <li><a href="#">공연티켓</a>
+        <li><a href="#">공지사항</a>
+        <li><a href="#">Language</a>
+      </ul>
+    </nav>	
+  </footer>
+  <script>
+    const timePeriodButtons = document.querySelectorAll('.time-period button');
+    timePeriodButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        timePeriodButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+
+  </script>
+  <script src="login.js"></script>
+</body>
+</html>

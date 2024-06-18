@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 50px;
+}
+.payment-form {
+  width: 80%;
+  max-width: 850px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.payment-info {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  h5 {
+    margin-top: 0;
+    font-weight: bold;
+  }
+}
+
+.payment-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #737288;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.time-period {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.time-period button {
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.time-period button.active {
+  background-color: #737288;
+  color: white;
+}
+
+
+table {
+  th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 3px 10px 3px 10px;
+  }
+  h5 {
+      font-weight: bold;
+  }
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin: 15px;
+  .grey {
+      background-color: rgb(223, 223, 223);
+  }
+}
+
+.show_all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  padding: 12px 6px;
+  margin: 0 0 50px 150px;
+  border-radius: 10px;
+  width: 250px;
+  border-width: 1px;
+}
+
+.show_all:hover {
+    background-color: #c2c2c2;
+}
